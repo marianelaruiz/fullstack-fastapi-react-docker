@@ -18,7 +18,7 @@ Este é um projeto fullstack que exibe uma lista de guitarras. O backend é dese
 
 
 ## **Criação de imagens do docker**
-1. Executar o backend
+1. Executar o backend.
 Construir la imagen del backend:
 - cd backend
 - docker build . -t backend
@@ -29,7 +29,7 @@ Execute o contêiner de backend:
 Verifique se o backend está em execução:
 - http://localhost:8000/guitars
 
-2. Executar o front-end
+2. Executar o front-end.
 Construir la imagen del frontend:
 - cd frontend
 - docker build . -t frontend
