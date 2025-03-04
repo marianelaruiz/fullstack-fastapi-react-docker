@@ -17,7 +17,7 @@ Este é um projeto fullstack que exibe uma lista de guitarras. O backend é dese
 
 
 
-## **Instalação e execução do Docker**
+## **Criação de imagens do docker**
 1. Executar o backend
 Construir la imagen del backend:
 - cd backend
@@ -34,11 +34,17 @@ Construir la imagen del frontend:
 - cd frontend
 - docker build . -t frontend
 
+3. Criação da docker network
+- docker network create FOOBAR
+
 ## **Conexão do front-end e do back-end via docker network**
 Na terminal do backend:
 - docker run --name backend --rm --network FOOBAR -p 8000:8000 backend
 
 Na termianl do frontend:
-- docker run --rm --name frontend--network FOOBAR -p 3000:3000 frontend
+- docker run --rm --name frontend --network FOOBAR -p 3000:3000 frontend
+
+Finalmente, entre em:
+- http://localhost:3000
 
 
